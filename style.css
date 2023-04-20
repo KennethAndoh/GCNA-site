@@ -268,6 +268,7 @@ main{
     cursor: pointer;
 }
 
+
 .service-card:hover{
     background: var(--orange);
     opacity: .7;
@@ -282,7 +283,7 @@ main{
 }
 
 .service-description{
-    padding-top: 15px;
+    padding-top: 20px;
     font-size: 1.1rem;
     text-align: center;
     letter-spacing: 1px;
@@ -290,9 +291,25 @@ main{
 }
 
 .service-card i{
-    padding-top: 20px;
-    font-size: 5rem;
+    padding-top: 15px;
+    font-size: 4rem;
     text-align: center;
+}
+
+@media (max-width:440px){
+    .service-card{
+        height: 15rem;
+    }
+
+    .service-title{
+        font-size: 25px;
+    }
+    .service-description{
+        font-size: 1rem;
+    }
+    .service-card i{
+        display: none;
+    }
 }
 
 .products{
